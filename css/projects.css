@@ -54,6 +54,18 @@ body{
 	background-attachment: fixed;
 }	
 
+.box6{
+	height: 100vh;
+	width: 100%;
+	background-image: url("fixback2.jpeg");
+	background-size: cover;
+	background-position: center;
+	display:table;
+	background-attachment: fixed;
+
+}
+
+
 h1{
 	font-family: sans-serif;
 	font-size: 80px;
