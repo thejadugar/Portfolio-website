@@ -19,9 +19,8 @@ body{
 	background-image: url("fixback2.jpeg");
 	background-size: cover;
 	background-position: center;
-	display:table;
+	display: table;
 	background-attachment: fixed;
-
 }
 
 .box3{
@@ -30,8 +29,9 @@ body{
 	background-image: url("fixback3.jpeg");
 	background-size: cover;
 	background-position: center;
-	display: table;
+	display:table;
 	background-attachment: fixed;
+
 }
 
 .box4{
@@ -42,7 +42,7 @@ body{
 	background-position: center;
 	display: table;
 	background-attachment: fixed;
-}	
+}
 
 .box5{
 	height: 100vh;
@@ -60,9 +60,18 @@ body{
 	background-image: url("fixback2.jpeg");
 	background-size: cover;
 	background-position: center;
+	display: table;
+	background-attachment: fixed;
+}	
+
+.box7{
+	height: 100vh;
+	width: 100%;
+	background-image: url("fixback3.jpeg");
+	background-size: cover;
+	background-position: center;
 	display:table;
 	background-attachment: fixed;
-
 }
 
 
