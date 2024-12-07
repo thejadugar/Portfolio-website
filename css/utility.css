@@ -40,8 +40,8 @@
     border-color: var(--primary);
     color:var(--primary);
     font-size: 2rem;
-    margin-left: 4rem;
-    margin-bottom: 7rem;
+    margin-left: 28rem;
+    margin-bottom: 1rem;
 }
 
 .button-separate1{
@@ -50,7 +50,7 @@
     color:var(--primary);
     font-size: 2rem;
     margin-left: 28rem;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 }
 
 .button-separate1:hover{
