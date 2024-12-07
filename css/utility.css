@@ -43,7 +43,6 @@
     border-color: gray;
     transition: all .4s;
 }
-
 .button-separate1{
     background: transparent;
     border-color: var(--primary);
