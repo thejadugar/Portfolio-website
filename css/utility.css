@@ -27,6 +27,22 @@
     transition: 200ms;
 }
 
+.button-separate:hover{
+    color: var(--dark);
+    cursor: pointer;
+    background-color: var(--primary);
+    border-color: gray;
+    transition: all .4s;
+}
+
+.button-separate{
+    background: transparent;
+    border-color: var(--primary);
+    color:var(--primary);
+    font-size: 2rem;
+    margin-left: 4rem;
+    margin-bottom: 7rem;
+}
 
 .button-separate1{
     background: transparent;
@@ -36,7 +52,6 @@
     margin-left: 28rem;
     margin-bottom: 7rem;
 }
-
 
 .button-separate1:hover{
     color: var(--dark);
