@@ -1,14 +1,18 @@
-.flex{
-    display: flex ;
+/* Utility Classes */
+.flex {
+    display: flex;
 }
-.items-center{
+
+.items-center {
     align-items: center;
 }
-.justify{
-    justify-content: space-between;
-}   
 
-.button{
+.justify {
+    justify-content: space-between;
+}
+
+/* Buttons */
+.button {
     margin-top: 1.5rem;
     margin-right: 1rem;
     padding: 0.5rem 0.5rem;
@@ -19,43 +23,53 @@
     background-color: var(--primary);
 }
 
+    .button:hover {
+        background: transparent;
+        border-color: var(--primary);
+        color: var(--primary);
+        transition: 200ms;
+    }
 
-.button:hover{
+.button-separate, .button-separate1 {
     background: transparent;
     border-color: var(--primary);
-    color:var(--primary);
-    transition: 200ms;
+    color: var(--primary);
+    font-size: 1.5rem; /* Adjusted for better scaling */
+    margin-left: auto; /* Centered for smaller screens */
+    margin-right: auto;
+    display: block;
+    text-align: center;
 }
 
-.button-separate{
-    background: transparent;
-    border-color: var(--primary);
-    color:var(--primary);
-    font-size: 2rem;
-    margin-left: 27rem;
-    margin-bottom: 0.7rem;
+    .button-separate:hover, .button-separate1:hover {
+        color: var(--dark);
+        cursor: pointer;
+        background-color: var(--primary);
+        border-color: gray;
+        transition: all 0.4s;
+    }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .button-separate, .button-separate1 {
+        font-size: 1.2rem;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        padding: 0.5rem 1rem;
+    }
 }
 
-.button-separate:hover{
-    color: var(--dark);
-    cursor: pointer;
-    background-color: var(--primary);
-    border-color: gray;
-    transition: all .4s;
-}
-.button-separate1{
-    background: transparent;
-    border-color: var(--primary);
-    color:var(--primary);
-    font-size: 2rem;
-    margin-left: 28rem;
-    margin-bottom: 6rem;
-}
+@media (max-width: 768px) {
+    .button {
+        width: 90%; /* Full-width buttons on smaller screens */
+        margin: 0.5rem auto;
+        padding: 0.5rem;
+    }
 
-.button-separate1:hover{
-    color: var(--dark);
-    cursor: pointer;
-    background-color: var(--primary);
-    border-color: gray;
-    transition: all .4s;
+    .button-separate, .button-separate1 {
+        font-size: 1rem;
+        width: 90%;
+        margin: 0.5rem auto;
+    }
 }

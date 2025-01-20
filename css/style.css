@@ -1,90 +1,104 @@
 @import 'utility.css';
-:root{
+
+:root {
     --primary: #3DCFD3;
     --dark: #161616;
     --pure: #ffffff;
     --ternary: #898989;
     --light: #F2F2F2;  
-}       
- 
-header nav{
-    padding: 0.5rem  0;
 }
 
-header nav .branding{
-    margin-right:3rem;
-}
-
-
-body{
-    font-family: 'poppins', sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
     animation: breathing 9s infinite;
-}
-
-*{
-    padding: 0%;
     margin: 0;
-    box-sizing: border-box;
-    -webkit-font-smoothing : antialised;
+    padding: 0;
 }
 
-header{
-         background-color: var(--dark);
-         clip-path: polygon(0 0 ,50% 2% , 55% 17%,100% 0 ,100% 90% ,70% 80% ,0 90%);
+header {
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 50% 2%, 55% 17%, 100% 0, 100% 90%, 70% 80%, 0 90%);
 }
 
-.container{
-    max-width: 11570px;
-    padding: 7px 35px;
-    margin: 0 auto;
+header nav {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-header nav .left a{
+
+header nav .branding {
+    margin-right: 3rem;
+}
+
+header nav .left {
+    display: flex;
+    align-items: center;
+}
+
+header nav .left a {
     color: red;
     text-decoration: none;
     margin-right: 1.5rem;
     text-transform: uppercase;
 }
-header nav .left a:hover{ 
+
+header nav .left a:hover {
     color: lightgreen;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
-.hero .right h4{
-    color:var(--primary);
-    margin-left: 2.5rem;
-    font-size: 4.5rem;
-    margin-bottom: 0.5rem;
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
 }
 
-
-.hero .right h1{
-    color:var(--light);
-    font-size: 4rem;
-    margin-left: 2.2rem;
-    margin-bottom: 1.5rem;
-    line-height: 4rem;
-}
-
-
-.hero .right h1 span{
-    color:red;
-    font-size: 5rem;
+.hero .left img {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 1rem;
+}
+
+.hero .right {
+    max-width: 600px;
+}
+
+.hero .right h4 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .right h1 {
+    color: var(--light);
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .right h1 span {
+    color: red;
+    font-size: 3rem;
 }
 
 .hero .right p {
     color: var(--pure);
-    margin-bottom: 1rem;
-    margin-left: 2.2rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
 }
-
 
 .popup-container {
     display: none;
     position: fixed;
     top: 15%;
-    left: 77%;
-    transform: translate(-10%, -10%);
+    left: 50%;
+    transform: translate(-50%, -10%);
     padding: 20px;
     background-color: orange;
     border-radius: 10px;
@@ -92,26 +106,70 @@ header nav .left a:hover{
     z-index: 1;
 }
 
-@keyframes breathing {
-    0%{
-        background-color: rgb(255, 0, 0); 
+/* Buttons */
+.button, .button-separate, .button-separate1 {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    header nav .branding {
+        margin-right: 1rem;
     }
-    15% {
-        background-color: orange; 
+
+    .hero .right h4 {
+        font-size: 2rem;
     }
-    30% {
-        background-color: green; 
+
+    .hero .right h1 {
+        font-size: 1.8rem;
     }
-    45% {
-        background-color: cyan; 
+
+    .hero .right h1 span {
+        font-size: 2.5rem;
     }
-    60% {
-        background-color: lightcoral; 
+
+    .hero .right p {
+        font-size: 0.9rem;
     }
-    80% {
-        background-color: skyblue; 
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
     }
-    100% {
-        background-color: rgb(255, 0,0); 
+
+    header nav .left a {
+        margin-right: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .left img {
+        width: 80%;
+    }
+
+    .hero .right h4 {
+        font-size: 1.5rem;
+    }
+
+    .hero .right h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero .right h1 span {
+        font-size: 2rem;
+    }
+
+    .hero .right p {
+        font-size: 0.8rem;
+        padding: 0 0.5rem;
     }
 }
